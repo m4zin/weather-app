@@ -4,16 +4,26 @@
   "description": "Project that I will be creating to teach myself how to work with asynchronous javascript and APIs.",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch",
+    "start": "webpack serve --open",
+    "lint": "eslint --fix src/scripts/"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@effortlessmotion/html-webpack-inline-source-plugin": "^1.0.3",
     "css-loader": "^6.10.0",
+    "eslint": "^8.56.0",
+    "eslint-config-google": "^0.14.0",
+    "express": "^4.18.2",
+    "html-webpack-inline-source-plugin": "^0.0.10",
     "html-webpack-plugin": "^5.6.0",
     "style-loader": "^3.3.4",
     "webpack": "^5.90.1",
-    "webpack-cli": "^5.1.4"
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-middleware": "^7.0.0",
+    "webpack-dev-server": "^4.15.1"
   }
 }
