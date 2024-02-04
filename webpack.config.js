@@ -25,10 +25,10 @@ module.exports = {
             {
                 test: /\.(png|svg|jpg|jpeg|gif)$/i,
                 type: 'asset/resource',
-            },
+            }
         ],
     },
     devServer: {
-        static: './dist',
+        static: './dist/index.html',
     }
 };

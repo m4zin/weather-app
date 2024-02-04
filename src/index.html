@@ -12,11 +12,19 @@
         <div class="weather-box">
             <div class="input-box">
                 <label for="location">Enter Location</label>
-                <input type="text" name="location" id="location" placeholder="eg. New York">
+                <input type="text" name="location" id="location" placeholder="eg. New York" required>
                 <button class="search-btn">Search</button>
+                <p class="error"></p>
             </div>
-            <div class="weather-info">
-                <img id="weatherConditionIcon">
+            <div class="weather-info-and-loader">
+                <div class="weather-info">
+                    <img id="weatherConditionIcon">
+                    <p class="condition-text"></p>
+                    <p class="location"></p>
+                    <p class="temps"></p>
+                    <p class="wind-speed"></p>
+                </div>
+                <div class="loader"></div>
             </div>
         </div>
     </div>

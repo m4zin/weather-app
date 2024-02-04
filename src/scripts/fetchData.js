@@ -5,7 +5,7 @@ const data = (function () {
       const url = 'https://api.weatherapi.com/v1/';
       const apiKey = '91e51d6b3cdb4631a0382533243001';
       const weather = await fetch(`${url}current.json?key=${apiKey}&q=${city}`, {
-        mode: 'cors'
+        method: 'get'
       });
 
       const data = await weather.json();
